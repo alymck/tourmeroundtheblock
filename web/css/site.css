@@ -1,0 +1,48 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Cityscape) */
+.bgimg-1 {
+    background-image: url('/web/img/tourme1city.jpg');
+    min-height: 100%;
+}
+
+/* Second image (Join in) */
+.bgimg-2 {
+    background-image: url('/web/img/tourme3onthephone.jpg');
+    min-height: 400px;
+}
+
+/* Third image (Document it) */
+.bgimg-3 {
+    background-image: url("/web/img/tourme4snapshot.jpg");
+    min-height: 400px;
+}
+
+/* Fourth image (Create Your Own) */
+.bgimg-4 {
+    background-image: url("/web/img/bar.jpg");
+    min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+        background-attachment: scroll;
+    }
+}
